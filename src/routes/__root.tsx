@@ -3,6 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
+import { VxoBinanceRef } from "@/components/vxo-binance-ref";
 const APP_NAME = "Vực Biển Đông";
 
 export const Route = createRootRoute({
@@ -38,6 +39,7 @@ export const Route = createRootRoute({
         <AuthProvider>
           <Outlet />
         </AuthProvider>
+        <VxoBinanceRef />
         <Scripts />
       </body>
     </html>
